@@ -1,1 +1,35 @@
-<p>nav works!</p>
+ <!--collapsed (in a vertical or "hamburger" menu style) on screens
+     that are smaller than medium (md)
+      border-bottom adds a border at the bottom of the element, usually 1 pixel thick by default.
+       mb-3 applies margin-bottom of 3 units
+       
+       
+navbar-expand-md: The navbar will be collapsed on small screens (mobile), and expand on medium screens and above.
+border-bottom-mb-3: The element will have a bottom border and a margin below it (spacing of size 3 units).
+
+class="justify-content-center": This is a flexbox utility class in Bootstrap that centers the ul 
+nav-item class applies Bootstrap-specific styling for individual navigation items within the ul.
+
+class="text-secondary": This class applies the secondary color to the text. In Bootstrap's default theme, the secondary color is
+ a muted gray.
+-->
+
+<nav  class="navbar-expand-md border-bottom-mb-3"> 
+    <div class="container">
+     <ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link text-secondary" routerLink="/home" routerLinkActive="text-dark">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-secondary" routerLink="/portfolio" routerLinkActive="text-dark">Portfolio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-secondary" routerLink="/resume" routerLinkActive="text-dark">Resume</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link text-secondary" routerLink="/contact" routerLinkActive="text-dark">Contact</a>
+    </li>
+   </ul>
+
+    </div>
+</nav>
