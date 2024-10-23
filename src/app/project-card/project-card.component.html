@@ -1,13 +1,16 @@
 <div class="card shadow text-center"  style="max-width: 350px;min-width :350px; margin-top: 30px;">
     <div class="card-body" >
-        <h5 class="card-title">{{projectName}}</h5>
-        <p class="card-text">this is the sample project</p>
+        <h5 class="card-title">{{project.name}}</h5>
+        <p class="card-text">{{project.summary}}</p>
         <button  class="btn btn-primary">view more</button>
     </div>
     <div class="card-footer">
         <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
-            <div class="tag " > Angular</div>  <!-- here, me=2,mb=1 also used-->
-            <div class="tag "> Typescript</div>
+            <div *ngFor="let tags of project.tag">
+                <div class="tag " [style.background-color]="tags.color" > {{tags}}</div>
+            </div>
+              <!-- here, me=2,mb=1 also used-->
+            
         </div>
     </div>
 </div>

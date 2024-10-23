@@ -2,22 +2,11 @@
 
 <div class="container">
   <div class="row">
-    <div style="max-width: 380px;min-width: 380px ;">
-       
-        <app-project-card [projectName]="'Placement Analysis using ML'"></app-project-card>
+    <div *ngFor="let project of projects"style="max-width: 380px;min-width: 380px ;">
+      
+        <app-project-card [project]="project"></app-project-card> 
     </div>
-
-
-    <div style="max-width: 380px;min-width: 380px ;">
-       
-        <app-project-card [projectName]="'education for visually impaired'"></app-project-card>
-    </div>
-
-
-    <div style="max-width: 380px;min-width: 380px ;">
-       
-        <app-project-card [projectName]="'Sewage Gas monitoring using Iot'"></app-project-card>
-    </div>
+  
   </div>
 </div>
 
