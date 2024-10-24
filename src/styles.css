@@ -3,3 +3,14 @@
 .container{
     max-width: 1140px;
 } */
+
+.tag{
+    padding: 0 20px;
+    height: 30px;
+    width:fit-content;
+    font-size: 14px;
+    line-height: 30px;  /*  here line height i s used  */
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}

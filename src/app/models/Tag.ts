@@ -6,6 +6,7 @@ export class Tag{
   static readonly JAVA= new Tag("Java","yellow");
   static readonly TYPESCRIPT= new Tag("Typescript","vilot");
   static readonly HTML= new Tag("HTML","black");
+  static readonly MEAN=new Tag("MEAN","brown")
   
 
 

@@ -8,12 +8,13 @@ import { Tag } from '../models/Tag';
 export class PrjectsService {
  
   projects: Project[]=[
-    {id:0,name:'Sample Angular app',summary:'Test description',description:'', projectLink:'',tag: [Tag.ANGULAR,Tag.TYPESCRIPT],pictures:[]},
-    {id:1,name:'Sample web app',summary:'Test description',description:'', projectLink:'',tag: [Tag.ANGULAR,Tag.JAVA],pictures:[]},
-    {id:2,name:'Sample flutter app',summary:'Test description',description:'', projectLink:'',tag: [Tag.HTML,Tag.TYPESCRIPT],pictures:[]},
+    {id:0,name:'LearnSphere',summary:'Test description',description:'', projectLink:'https',tag: [Tag.ANGULAR,Tag.HTML],pictures:["../../assets/e-learning1.jpg","../../assets/e-learning2.jpg"]},
+    {id:1,name:'Epicurean Delights ',summary:'Test description',description:'', projectLink:'',tag: [Tag.MEAN],pictures:["../../assets/food1.jpg","../../assets/food2.jpg",]},
+    {id:2,name:'Sewage Gas Monitoring',summary:'Test description',description:'', projectLink:'',tag: [Tag.IOT],pictures:["../../assets/sewage1.png"]},
     {id:3,name:'Sample iot app',summary:'Test description',description:'', projectLink:'',tag: [Tag.ANGULAR,Tag.TYPESCRIPT],pictures:[]},
     {id:4,name:'Sample typescript app',summary:'Test description',description:'', projectLink:'',tag: [Tag.ANGULAR,Tag.TYPESCRIPT],pictures:[]},
 ]
+  
   constructor() { }
 
 GetProjects(){
