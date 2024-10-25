@@ -6,23 +6,23 @@
 <div class="modal-body">
    <carousel>
     <div *ngFor="let picture of project.pictures"> 
-        <slide> <img src={{picture}} alt="1" style="display: block; width: auto;"></slide>
+        <slide> <img src={{picture}} alt="1" style="display: block; width: 100%;"></slide>
     </div>
    </carousel>
    
    </div>
-
+<hr>
    <div>
     <h3 style="text-align: center;">Description</h3>
-   <p>{{project.description}}</p>
-   <!-- <p>You can find this project on github <a href="{{project.projectLi}}"> </a></p> -->
+   <p style="text-align: justify;">{{project.description}}</p>
+   <h4 style="text-align: center;">You can find this project on github <a href="{{project.projectLink}}" target="_blank">HERE </a></h4>
 
-
-    <!-- <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
+</div>
+<hr>
+     <div class="d-flex flex-wrap justify-content-center" style="gap: 10px;">
         <div *ngFor="let tags of project.tag">
             <div class="tag " [style.background-color]="tags.color" > {{tags}}</div>
         </div>
          
         
-    </div> -->
-   </div>
+    </div>

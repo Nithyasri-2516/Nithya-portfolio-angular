@@ -16,6 +16,18 @@
             <h4>{{featured.name}}</h4>
         </div>
 
+        <carousel>
+            <div *ngFor="let picture of featured.pictures"> 
+                <slide> <img src={{picture}} alt="1" style="display: block; width: 100%;"></slide>
+            </div>
+           </carousel>
+
+           <p style="text-align: center;">{{featured.summary}}</p>
+           <p style="color:red;text-align: center;">
+           <a href="http://localhost:4200/portfolio">Visit the portfolio section to learn more
+        </a> 
+           </p>
+
     </div>
     </div>
 </div>

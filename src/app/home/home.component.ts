@@ -13,6 +13,6 @@ export class HomeComponent implements OnInit{
     this.title.setTitle('Nithya-Home')
   }
   ngOnInit():void{
-    this.featured=this.services.GetProjectById(1);
+    this.featured=this.services.GetProjectById(0);
   }
 }
